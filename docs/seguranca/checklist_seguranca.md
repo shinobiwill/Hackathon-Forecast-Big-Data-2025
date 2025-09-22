@@ -1,27 +1,13 @@
-# Política de Privacidade — Projeto Hackathon Forecast Big Data 2025  
-**Última atualização:** 22 de setembro de 2025
+# Checklist de Segurança — Projeto Forecast Big Data 2025
 
-## 1. Introdução  
-Este documento descreve como os dados são tratados no projeto, em conformidade com a LGPD (Lei nº 13.709/2018).
+✅ Criptografia dos dados em repouso  
+✅ Validação de dados antes do processamento  
+✅ Logs de auditoria ativados  
+✅ Política de Privacidade publicada  
+✅ Termo de Consentimento disponível  
+✅ Plano de Recuperação documentado  
+✅ `.gitignore` configurado para arquivos sensíveis  
+✅ Branch dedicada: `feature/seguranca-lgpd`  
+✅ Pull Request aberto com documentação
 
-## 2. Dados Coletados  
-- Identificador anonimizado da loja  
-- Data da venda  
-- Quantidade e valor total  
-- Categoria dos produtos
-
-## 3. Finalidade  
-Uso exclusivo para desenvolvimento do modelo preditivo.  
-Sem comercialização ou compartilhamento externo.
-
-## 4. Segurança  
-- Criptografia dos dados  
-- Controle de acesso  
-- Minimização de dados
-
-## 5. Direitos dos Titulares  
-- Acesso, correção, anonimização e eliminação  
-- Canal de contato: via issues no GitHub
-
-## 6. Responsável  
-Vinicios (@shinobiwill)
+**Status:** Pronto para integração ao fluxo principal
