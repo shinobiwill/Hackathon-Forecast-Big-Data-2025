@@ -33,48 +33,41 @@ Este projeto foi desenvolvido como parte do desafio técnico do Hackathon Foreca
 - Integração com Gmail via SMTP seguro
 
 Exemplo de código: monitoramento_logs.py
+
 import os
 import smtplib
 from email.mime.text import MIMEText
-
 LOG_FILE = 'seguranca.log'
 LAST_POSITION_FILE = 'last_log_position.txt'
 EMAIL_SENDER = 'seu_email@gmail.com'
 EMAIL_RECEIVER = 'destinatario@example.com'
 EMAIL_PASSWORD = 'sua_senha_de_app'
-
 def send_alert(subject, body):
     msg = MIMEText(body)
     msg['Subject'] = subject
     msg['From'] = EMAIL_SENDER
     msg['To'] = EMAIL_RECEIVER
-
-    try:
+try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
             smtp.login(EMAIL_SENDER, EMAIL_PASSWORD)
             smtp.send_message(msg)
         print(f"Alerta enviado: {subject}")
     except Exception as e:
         print(f"Erro ao enviar e-mail: {e}")
-
 def monitor_logs():
     last_pos = 0
     if os.path.exists(LAST_POSITION_FILE):
         with open(LAST_POSITION_FILE, 'r') as f:
             last_pos = int(f.read())
-
-    with open(LOG_FILE, 'r') as f:
+   with open(LOG_FILE, 'r') as f:
         f.seek(last_pos)
         new_logs = f.readlines()
         current_pos = f.tell()
-
     for line in new_logs:
         if 'ERROR' in line or 'WARNING' in line:
             send_alert("Alerta de Segurança no Pipeline", line.strip())
-
     with open(LAST_POSITION_FILE, 'w') as f:
         f.write(str(current_pos))
-
 if __name__ == "__main__":
     monitor_logs()
 
