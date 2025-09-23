@@ -46,7 +46,7 @@ Experiência em segurança patrimonial, análise de riscos, docência e alta per
 
 ## 📬 Contato
 
-Para dúvidas ou sugestões, abra uma issue ou envie uma mensagem via [LinkedIn](https://www.linkedin.com/in/viniciostsatsoulis).
+Para dúvidas ou sugestões, abra uma issue ou envie uma mensagem via [LinkedIn](https://www.linkedin.com/in/vinicios-rodrigues-64b7a7162/).
 
 ---
 
