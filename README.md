@@ -26,6 +26,9 @@ Adotamos rigorosas medidas técnicas para proteger os dados, incluindo:
 - **Controle de Acesso:** O acesso ao código-fonte e aos dados brutos é restrito aos membros autorizados da equipe.
 - **Minimização de Dados:** Utilizamos apenas os dados estritamente necessários para a finalidade do projeto.
 
+![Gráfico de Cibersegurança](docs/seguranca/grafico_ciberseguranca.png)
+
+
 ## 5. Direitos dos Titulares
 Mesmo trabalhando com dados anonimizados, o projeto respeita os princípios da LGPD. Caso este projeto evolua para utilizar dados pessoais, garantiremos todos os direitos aos titulares, como acesso, correção, anonimização e eliminação dos seus dados.
 
